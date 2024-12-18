@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO- Computer Engineering Student</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        #home {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .home-text {
+            flex: 1;
+        }
+
+        .home-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .home-img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+
+        .home-text h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .home-text h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .skills-badge {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        #projects .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: var(--background-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        #contact {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .education-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MY-PORTFOLIYO</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container home-content">
+            <div class="home-text">
+                <h1>MY-PORTFOLIYO</h1>
+                <h2>Computer Engineering Student</h2>
+                <div>
+                    <span class="skills-badge">Python</span>
+                    <span class="skills-badge">C++</span>
+                    <span class="skills-badge">Advanced java</span>
+                    <span class="skills-badge">operating systems</span>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="MY PORTFOLIYO">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <p>
+                I am a passionate Computer Engineering student currently pursuing my Bachelor's degree at Kadi University. My academic journey has been driven by a deep fascination with technology and its potential to solve real-world challenges.
+            </p>
+            <div class="education-details">
+                <h3>Education</h3>
+                <p><strong>Bachelor of Engineering in Computer Engineering</strong><br>
+                kadi University<br>
+                Expected Graduation: May 2026<br>
+                Current GPA: 7.0/10.0</p>
+            </div>
+            <p class="mt-4">
+                Throughout my studies, I've developed a strong foundation in core engineering disciplines, including:
+            </p>
+            <ul style="margin-left: 30px; list-style-type: disc;">
+                <li>JavaScript Programming</li>
+                <li>operating systems</li>
+                <li>Computer Architecture</li>
+                <li>Network Technologies</li>
+                <li>Data Structures and Algorithms</li>
+            </ul>
+            <p>
+                Beyond academics, I'm an active member of the university's IEEE Clube and also participated in  hackathons, and also participate in collage events,demonstrating my commitment to practical learning and innovation. My goal is to leverage my technical skills to develop cutting-edge technological solutions that can make a meaningful impact.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Academic Projects</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 1">
+                    <h3>LIVE LOCATION DETACTION</h3>
+                    <p>VEHICAL'S LIVE  LOCATION SHOWN </p>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 2">
+                    <h3>E-VOTING SYSTEM</h3>
+                    <p>BASED E-COMMERS</p>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 3">
+                    <h3>DESKTOP VOICE ASSISTANT</h3>
+                    <p>BASED ON AI & PHYTHON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Let's connect and explore opportunities!</p>
+            </div>
+            <div class="contact-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
